@@ -107,6 +107,7 @@
     <Compile Include="Models\Assessment.cs" />
     <Compile Include="Models\AssessmentComponent.cs" />
     <Compile Include="Models\Clo.cs" />
+    <Compile Include="Models\Lookup.cs" />
     <Compile Include="Models\Rubric.cs" />
     <Compile Include="Models\RubricLevel.cs" />
     <Compile Include="Models\Student.cs" />
