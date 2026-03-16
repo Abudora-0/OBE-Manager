@@ -136,7 +136,7 @@ namespace MidDb26_2025CS212.Forms
                 NavClick(btn_students, "Students",
                 new StudentForm());
             this.btn_clos.Click += (s, e) =>
-                MessageBox.Show("Coming soon!", "CLOs");
+                NavClick(btn_clos, "CLOs", new CloForm());
             this.btn_rubrics.Click += (s, e) =>
                 MessageBox.Show("Coming soon!", "Rubrics");
             this.btn_assessments.Click += (s, e) =>
