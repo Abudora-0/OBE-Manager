@@ -23,7 +23,7 @@ namespace MidDb26_2025CS212.DAL
                                l.Name as StatusName
                         FROM student s
                         INNER JOIN lookup l ON s.Status = l.LookupId
-                        ORDER BY s.FirstName";
+                        ORDER BY s.Id ASC";
 
                     MySqlCommand cmd = new MySqlCommand(query, con);
                     con.Open();
@@ -176,7 +176,7 @@ namespace MidDb26_2025CS212.DAL
                         WHERE s.FirstName LIKE @kw 
                            OR s.LastName LIKE @kw
                            OR s.RegistrationNumber LIKE @kw
-                        ORDER BY s.FirstName";
+                        ORDER BY s.Id ASC";
 
                     MySqlCommand cmd = new MySqlCommand(query, con);
                     cmd.Parameters.AddWithValue("@kw", "%" + keyword + "%");
