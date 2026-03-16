@@ -80,7 +80,7 @@ namespace MidDb26_2025CS212.Forms
 
         private void UpdateRecordCount(int count)
         {
-            lbl_title.Text = "Manage Students (" + count + " records)";
+            lbl_subtitle.Text = count + " students found";
         }
 
         private void btn_Add_Click(object sender, EventArgs e)
@@ -264,6 +264,8 @@ namespace MidDb26_2025CS212.Forms
             txt_Contact.Clear();
             cmb_Status.SelectedIndex = 0;
             dgv_Students.ClearSelection();
+            pnl_form.Visible = false;
+            lbl_form_title.Text = "Add New Student";
         }
     }
 }

@@ -13,12 +13,19 @@
 
         private void InitializeComponent()
         {
-            this.pnl_top = new System.Windows.Forms.Panel();
+            this.pnl_header = new System.Windows.Forms.Panel();
             this.lbl_title = new System.Windows.Forms.Label();
+            this.lbl_subtitle = new System.Windows.Forms.Label();
+            this.pnl_search = new System.Windows.Forms.Panel();
             this.txt_Search = new System.Windows.Forms.TextBox();
             this.btn_Search = new System.Windows.Forms.Button();
+            this.btn_Add_New = new System.Windows.Forms.Button();
+            this.pnl_grid = new System.Windows.Forms.Panel();
             this.dgv_Students = new System.Windows.Forms.DataGridView();
             this.pnl_form = new System.Windows.Forms.Panel();
+            this.pnl_form_header = new System.Windows.Forms.Panel();
+            this.lbl_form_title = new System.Windows.Forms.Label();
+            this.pnl_fields = new System.Windows.Forms.Panel();
             this.lbl_fn = new System.Windows.Forms.Label();
             this.txt_FirstName = new System.Windows.Forms.TextBox();
             this.lbl_ln = new System.Windows.Forms.Label();
@@ -31,275 +38,375 @@
             this.txt_Contact = new System.Windows.Forms.TextBox();
             this.lbl_status = new System.Windows.Forms.Label();
             this.cmb_Status = new System.Windows.Forms.ComboBox();
+            this.pnl_buttons = new System.Windows.Forms.Panel();
             this.btn_Add = new System.Windows.Forms.Button();
             this.btn_Update = new System.Windows.Forms.Button();
             this.btn_Delete = new System.Windows.Forms.Button();
             this.btn_Clear = new System.Windows.Forms.Button();
-            this.pnl_top.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_Students)).BeginInit();
-            this.pnl_form.SuspendLayout();
-            this.SuspendLayout();
-            // 
-            // pnl_top
-            // 
-            this.pnl_top.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(136)))), ((int)(((byte)(229)))));
-            this.pnl_top.Controls.Add(this.lbl_title);
-            this.pnl_top.Controls.Add(this.txt_Search);
-            this.pnl_top.Controls.Add(this.btn_Search);
-            this.pnl_top.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnl_top.Location = new System.Drawing.Point(0, 0);
-            this.pnl_top.Name = "pnl_top";
-            this.pnl_top.Size = new System.Drawing.Size(1010, 50);
-            this.pnl_top.TabIndex = 0;
-            // 
-            // lbl_title
-            // 
-            this.lbl_title.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
-            this.lbl_title.ForeColor = System.Drawing.Color.White;
-            this.lbl_title.Location = new System.Drawing.Point(15, 12);
-            this.lbl_title.Name = "lbl_title";
-            this.lbl_title.Size = new System.Drawing.Size(300, 28);
-            this.lbl_title.TabIndex = 0;
-            this.lbl_title.Text = "Manage Students";
-            // 
-            // txt_Search
-            // 
-            this.txt_Search.Location = new System.Drawing.Point(550, 13);
-            this.txt_Search.Name = "txt_Search";
-            this.txt_Search.Size = new System.Drawing.Size(200, 22);
-            this.txt_Search.TabIndex = 1;
-            // 
-            // btn_Search
-            // 
-            this.btn_Search.BackColor = System.Drawing.Color.White;
-            this.btn_Search.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Search.Location = new System.Drawing.Point(760, 12);
-            this.btn_Search.Name = "btn_Search";
-            this.btn_Search.Size = new System.Drawing.Size(80, 28);
-            this.btn_Search.TabIndex = 2;
-            this.btn_Search.Text = "Search";
-            this.btn_Search.UseVisualStyleBackColor = false;
-            this.btn_Search.Click += new System.EventHandler(this.btn_Search_Click);
-            // 
-            // dgv_Students
-            // 
-            this.dgv_Students.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgv_Students.ColumnHeadersHeight = 29;
-            this.dgv_Students.Location = new System.Drawing.Point(10, 60);
-            this.dgv_Students.Name = "dgv_Students";
-            this.dgv_Students.RowHeadersWidth = 51;
-            this.dgv_Students.Size = new System.Drawing.Size(1588, 280);
-            this.dgv_Students.TabIndex = 1;
-            this.dgv_Students.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Students_CellClick);
-            // 
-            // pnl_form
-            // 
-            this.pnl_form.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnl_form.Controls.Add(this.lbl_fn);
-            this.pnl_form.Controls.Add(this.txt_FirstName);
-            this.pnl_form.Controls.Add(this.lbl_ln);
-            this.pnl_form.Controls.Add(this.txt_LastName);
-            this.pnl_form.Controls.Add(this.lbl_reg);
-            this.pnl_form.Controls.Add(this.txt_RegNum);
-            this.pnl_form.Controls.Add(this.lbl_email);
-            this.pnl_form.Controls.Add(this.txt_Email);
-            this.pnl_form.Controls.Add(this.lbl_contact);
-            this.pnl_form.Controls.Add(this.txt_Contact);
-            this.pnl_form.Controls.Add(this.lbl_status);
-            this.pnl_form.Controls.Add(this.cmb_Status);
-            this.pnl_form.Controls.Add(this.btn_Add);
-            this.pnl_form.Controls.Add(this.btn_Update);
-            this.pnl_form.Controls.Add(this.btn_Delete);
-            this.pnl_form.Controls.Add(this.btn_Clear);
-            this.pnl_form.Location = new System.Drawing.Point(10, 350);
-            this.pnl_form.Name = "pnl_form";
-            this.pnl_form.Size = new System.Drawing.Size(860, 230);
-            this.pnl_form.TabIndex = 2;
-            // 
-            // lbl_fn
-            // 
-            this.lbl_fn.Location = new System.Drawing.Point(15, 15);
-            this.lbl_fn.Name = "lbl_fn";
-            this.lbl_fn.Size = new System.Drawing.Size(90, 20);
-            this.lbl_fn.TabIndex = 0;
-            this.lbl_fn.Text = "First Name *";
-            // 
-            // txt_FirstName
-            // 
-            this.txt_FirstName.Location = new System.Drawing.Point(15, 38);
-            this.txt_FirstName.Name = "txt_FirstName";
-            this.txt_FirstName.Size = new System.Drawing.Size(180, 22);
-            this.txt_FirstName.TabIndex = 1;
-            // 
-            // lbl_ln
-            // 
-            this.lbl_ln.Location = new System.Drawing.Point(215, 15);
-            this.lbl_ln.Name = "lbl_ln";
-            this.lbl_ln.Size = new System.Drawing.Size(80, 20);
-            this.lbl_ln.TabIndex = 2;
-            this.lbl_ln.Text = "Last Name";
-            // 
-            // txt_LastName
-            // 
-            this.txt_LastName.Location = new System.Drawing.Point(215, 38);
-            this.txt_LastName.Name = "txt_LastName";
-            this.txt_LastName.Size = new System.Drawing.Size(180, 22);
-            this.txt_LastName.TabIndex = 3;
-            // 
-            // lbl_reg
-            // 
-            this.lbl_reg.Location = new System.Drawing.Point(415, 15);
-            this.lbl_reg.Name = "lbl_reg";
-            this.lbl_reg.Size = new System.Drawing.Size(100, 20);
-            this.lbl_reg.TabIndex = 4;
-            this.lbl_reg.Text = "Reg Number *";
-            // 
-            // txt_RegNum
-            // 
-            this.txt_RegNum.Location = new System.Drawing.Point(415, 38);
-            this.txt_RegNum.Name = "txt_RegNum";
-            this.txt_RegNum.Size = new System.Drawing.Size(180, 22);
-            this.txt_RegNum.TabIndex = 5;
-            // 
-            // lbl_email
-            // 
-            this.lbl_email.Location = new System.Drawing.Point(15, 75);
-            this.lbl_email.Name = "lbl_email";
-            this.lbl_email.Size = new System.Drawing.Size(80, 20);
-            this.lbl_email.TabIndex = 6;
-            this.lbl_email.Text = "Email *";
-            // 
-            // txt_Email
-            // 
-            this.txt_Email.Location = new System.Drawing.Point(15, 98);
-            this.txt_Email.Name = "txt_Email";
-            this.txt_Email.Size = new System.Drawing.Size(180, 22);
-            this.txt_Email.TabIndex = 7;
-            // 
-            // lbl_contact
-            // 
-            this.lbl_contact.Location = new System.Drawing.Point(215, 75);
-            this.lbl_contact.Name = "lbl_contact";
-            this.lbl_contact.Size = new System.Drawing.Size(80, 20);
-            this.lbl_contact.TabIndex = 8;
-            this.lbl_contact.Text = "Contact";
-            // 
-            // txt_Contact
-            // 
-            this.txt_Contact.Location = new System.Drawing.Point(215, 98);
-            this.txt_Contact.Name = "txt_Contact";
-            this.txt_Contact.Size = new System.Drawing.Size(180, 22);
-            this.txt_Contact.TabIndex = 9;
-            // 
-            // lbl_status
-            // 
-            this.lbl_status.Location = new System.Drawing.Point(415, 75);
-            this.lbl_status.Name = "lbl_status";
-            this.lbl_status.Size = new System.Drawing.Size(80, 20);
-            this.lbl_status.TabIndex = 10;
-            this.lbl_status.Text = "Status";
-            // 
-            // cmb_Status
-            // 
-            this.cmb_Status.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmb_Status.Location = new System.Drawing.Point(415, 98);
-            this.cmb_Status.Name = "cmb_Status";
-            this.cmb_Status.Size = new System.Drawing.Size(180, 24);
-            this.cmb_Status.TabIndex = 11;
-            // 
-            // btn_Add
-            // 
-            this.btn_Add.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(175)))), ((int)(((byte)(80)))));
-            this.btn_Add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Add.ForeColor = System.Drawing.Color.White;
-            this.btn_Add.Location = new System.Drawing.Point(15, 155);
-            this.btn_Add.Name = "btn_Add";
-            this.btn_Add.Size = new System.Drawing.Size(120, 35);
-            this.btn_Add.TabIndex = 12;
-            this.btn_Add.Text = "Add Student";
-            this.btn_Add.UseVisualStyleBackColor = false;
-            this.btn_Add.Click += new System.EventHandler(this.btn_Add_Click);
-            // 
-            // btn_Update
-            // 
-            this.btn_Update.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(243)))));
-            this.btn_Update.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Update.ForeColor = System.Drawing.Color.White;
-            this.btn_Update.Location = new System.Drawing.Point(145, 155);
-            this.btn_Update.Name = "btn_Update";
-            this.btn_Update.Size = new System.Drawing.Size(100, 35);
-            this.btn_Update.TabIndex = 13;
-            this.btn_Update.Text = "Update";
-            this.btn_Update.UseVisualStyleBackColor = false;
-            this.btn_Update.Click += new System.EventHandler(this.btn_Update_Click);
-            // 
-            // btn_Delete
-            // 
-            this.btn_Delete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(67)))), ((int)(((byte)(54)))));
-            this.btn_Delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Delete.ForeColor = System.Drawing.Color.White;
-            this.btn_Delete.Location = new System.Drawing.Point(255, 155);
-            this.btn_Delete.Name = "btn_Delete";
-            this.btn_Delete.Size = new System.Drawing.Size(100, 35);
-            this.btn_Delete.TabIndex = 14;
-            this.btn_Delete.Text = "Delete";
-            this.btn_Delete.UseVisualStyleBackColor = false;
-            this.btn_Delete.Click += new System.EventHandler(this.btn_Delete_Click);
-            // 
-            // btn_Clear
-            // 
-            this.btn_Clear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(158)))), ((int)(((byte)(158)))));
-            this.btn_Clear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Clear.ForeColor = System.Drawing.Color.White;
-            this.btn_Clear.Location = new System.Drawing.Point(365, 155);
-            this.btn_Clear.Name = "btn_Clear";
-            this.btn_Clear.Size = new System.Drawing.Size(100, 35);
-            this.btn_Clear.TabIndex = 15;
-            this.btn_Clear.Text = "Clear";
-            this.btn_Clear.UseVisualStyleBackColor = false;
-            this.btn_Clear.Click += new System.EventHandler(this.btn_Clear_Click);
-            // 
-            // StudentForm
-            // 
-            this.ClientSize = new System.Drawing.Size(1010, 573);
-            this.Controls.Add(this.pnl_top);
-            this.Controls.Add(this.dgv_Students);
-            this.Controls.Add(this.pnl_form);
-            this.Name = "StudentForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Manage Students";
-            this.pnl_top.ResumeLayout(false);
-            this.pnl_top.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_Students)).EndInit();
-            this.pnl_form.ResumeLayout(false);
-            this.pnl_form.PerformLayout();
-            this.ResumeLayout(false);
 
+            this.SuspendLayout();
+
+            // ── HEADER PANEL ───────────────────────────────
+            this.pnl_header.BackColor =
+                System.Drawing.Color.FromArgb(26, 35, 126);
+            this.pnl_header.Dock =
+                System.Windows.Forms.DockStyle.Top;
+            this.pnl_header.Height = 70;
+            this.pnl_header.Controls.Add(this.lbl_title);
+            this.pnl_header.Controls.Add(this.lbl_subtitle);
+
+            this.lbl_title.Text = "Manage Students";
+            this.lbl_title.ForeColor =
+                System.Drawing.Color.White;
+            this.lbl_title.Font = new System.Drawing.Font(
+                "Segoe UI", 15F,
+                System.Drawing.FontStyle.Bold);
+            this.lbl_title.Location =
+                new System.Drawing.Point(20, 10);
+            this.lbl_title.Size =
+                new System.Drawing.Size(400, 30);
+
+            this.lbl_subtitle.Text =
+                "Add, update and manage student records";
+            this.lbl_subtitle.ForeColor =
+                System.Drawing.Color.FromArgb(160, 180, 230);
+            this.lbl_subtitle.Font = new System.Drawing.Font(
+                "Segoe UI", 9F);
+            this.lbl_subtitle.Location =
+                new System.Drawing.Point(20, 42);
+            this.lbl_subtitle.Size =
+                new System.Drawing.Size(400, 20);
+
+            // ── SEARCH PANEL ───────────────────────────────
+            this.pnl_search.BackColor =
+                System.Drawing.Color.White;
+            this.pnl_search.Dock =
+                System.Windows.Forms.DockStyle.Top;
+            this.pnl_search.Height = 54;
+
+            this.txt_Search.Location =
+                new System.Drawing.Point(16, 13);
+            this.txt_Search.Size =
+                new System.Drawing.Size(260, 28);
+            this.txt_Search.Font = new System.Drawing.Font(
+                "Segoe UI", 10F);
+            this.txt_Search.BorderStyle =
+                System.Windows.Forms.BorderStyle.FixedSingle;
+
+            this.btn_Search.Text = "Search";
+            this.btn_Search.Location =
+                new System.Drawing.Point(284, 12);
+            this.btn_Search.Size =
+                new System.Drawing.Size(90, 30);
+            this.btn_Search.BackColor =
+                System.Drawing.Color.FromArgb(26, 35, 126);
+            this.btn_Search.ForeColor =
+                System.Drawing.Color.White;
+            this.btn_Search.FlatStyle =
+                System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Search.FlatAppearance.BorderSize = 0;
+            this.btn_Search.Font = new System.Drawing.Font(
+                "Segoe UI", 9F);
+            this.btn_Search.Cursor =
+                System.Windows.Forms.Cursors.Hand;
+            this.btn_Search.Click += new System.EventHandler(
+                this.btn_Search_Click);
+
+            this.btn_Add_New.Text = "+ Add New Student";
+            this.btn_Add_New.Location =
+                new System.Drawing.Point(386, 12);
+            this.btn_Add_New.Size =
+                new System.Drawing.Size(160, 30);
+            this.btn_Add_New.BackColor =
+                System.Drawing.Color.FromArgb(57, 73, 171);
+            this.btn_Add_New.ForeColor =
+                System.Drawing.Color.White;
+            this.btn_Add_New.FlatStyle =
+                System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Add_New.FlatAppearance.BorderSize = 0;
+            this.btn_Add_New.Font = new System.Drawing.Font(
+                "Segoe UI", 9F,
+                System.Drawing.FontStyle.Bold);
+            this.btn_Add_New.Cursor =
+                System.Windows.Forms.Cursors.Hand;
+            this.btn_Add_New.Click += (s, e) =>
+            {
+                pnl_form.Visible = true;
+                lbl_form_title.Text = "Add New Student";
+                txt_FirstName.Focus();
+            };
+
+            this.pnl_search.Controls.Add(this.txt_Search);
+            this.pnl_search.Controls.Add(this.btn_Search);
+            this.pnl_search.Controls.Add(this.btn_Add_New);
+
+            // ── GRID PANEL ─────────────────────────────────
+            this.pnl_grid.Dock =
+                System.Windows.Forms.DockStyle.Fill;
+            this.pnl_grid.Padding =
+                new System.Windows.Forms.Padding(16, 10, 16, 10);
+            this.pnl_grid.BackColor =
+                System.Drawing.Color.FromArgb(248, 249, 252);
+
+            this.dgv_Students.Dock =
+                System.Windows.Forms.DockStyle.Fill;
+            this.dgv_Students.BackgroundColor =
+                System.Drawing.Color.White;
+            this.dgv_Students.BorderStyle =
+                System.Windows.Forms.BorderStyle.None;
+            this.dgv_Students.RowHeadersVisible = false;
+            this.dgv_Students.AllowUserToAddRows = false;
+            this.dgv_Students.ReadOnly = true;
+            this.dgv_Students.SelectionMode =
+                System.Windows.Forms.DataGridViewSelectionMode
+                .FullRowSelect;
+            this.dgv_Students.MultiSelect = false;
+            this.dgv_Students.AutoSizeColumnsMode =
+                System.Windows.Forms.DataGridViewAutoSizeColumnsMode
+                .Fill;
+            this.dgv_Students.Font = new System.Drawing.Font(
+                "Segoe UI", 9.5F);
+            this.dgv_Students.ColumnHeadersHeight = 36;
+            this.dgv_Students.RowTemplate.Height = 34;
+            this.dgv_Students.GridColor =
+                System.Drawing.Color.FromArgb(240, 240, 240);
+
+            // Header style
+            this.dgv_Students.ColumnHeadersDefaultCellStyle
+                .BackColor =
+                System.Drawing.Color.FromArgb(26, 35, 126);
+            this.dgv_Students.ColumnHeadersDefaultCellStyle
+                .ForeColor =
+                System.Drawing.Color.White;
+            this.dgv_Students.ColumnHeadersDefaultCellStyle
+                .Font = new System.Drawing.Font(
+                "Segoe UI", 9.5F,
+                System.Drawing.FontStyle.Bold);
+            this.dgv_Students.ColumnHeadersDefaultCellStyle
+                .Padding =
+                new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.dgv_Students.EnableHeadersVisualStyles = false;
+
+            // Row style
+            this.dgv_Students.DefaultCellStyle.Padding =
+                new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.dgv_Students.DefaultCellStyle.SelectionBackColor =
+                System.Drawing.Color.FromArgb(232, 234, 246);
+            this.dgv_Students.DefaultCellStyle.SelectionForeColor =
+                System.Drawing.Color.FromArgb(26, 35, 126);
+            this.dgv_Students.AlternatingRowsDefaultCellStyle
+                .BackColor =
+                System.Drawing.Color.FromArgb(248, 249, 252);
+
+            this.dgv_Students.CellClick +=
+                new System.Windows.Forms.DataGridViewCellEventHandler(
+                this.dgv_Students_CellClick);
+
+            this.pnl_grid.Controls.Add(this.dgv_Students);
+
+            // ── FORM PANEL ─────────────────────────────────
+            this.pnl_form.Dock =
+                System.Windows.Forms.DockStyle.Bottom;
+            this.pnl_form.Height = 220;
+            this.pnl_form.BackColor =
+                System.Drawing.Color.White;
+            this.pnl_form.Visible = false;
+
+            // Form header bar
+            this.pnl_form_header.BackColor =
+                System.Drawing.Color.FromArgb(232, 234, 246);
+            this.pnl_form_header.Dock =
+                System.Windows.Forms.DockStyle.Top;
+            this.pnl_form_header.Height = 36;
+            this.pnl_form_header.Controls.Add(this.lbl_form_title);
+
+            this.lbl_form_title.Text = "Add New Student";
+            this.lbl_form_title.ForeColor =
+                System.Drawing.Color.FromArgb(26, 35, 126);
+            this.lbl_form_title.Font = new System.Drawing.Font(
+                "Segoe UI", 10F,
+                System.Drawing.FontStyle.Bold);
+            this.lbl_form_title.Location =
+                new System.Drawing.Point(16, 8);
+            this.lbl_form_title.Size =
+                new System.Drawing.Size(300, 22);
+
+            // Fields panel
+            this.pnl_fields.Dock =
+                System.Windows.Forms.DockStyle.Fill;
+            this.pnl_fields.Padding =
+                new System.Windows.Forms.Padding(16, 10, 16, 0);
+            this.pnl_fields.BackColor =
+                System.Drawing.Color.White;
+
+            // Row 1
+            MakeField(lbl_fn, txt_FirstName,
+                "FIRST NAME *", 0, 0);
+            MakeField(lbl_ln, txt_LastName,
+                "LAST NAME", 200, 0);
+            MakeField(lbl_reg, txt_RegNum,
+                "REG NUMBER *", 400, 0);
+
+            // Row 2
+            MakeField(lbl_email, txt_Email,
+                "EMAIL *", 0, 70);
+            MakeField(lbl_contact, txt_Contact,
+                "CONTACT", 200, 70);
+
+            // Status
+            this.lbl_status.Text = "STATUS";
+            this.lbl_status.ForeColor =
+                System.Drawing.Color.FromArgb(26, 35, 126);
+            this.lbl_status.Font = new System.Drawing.Font(
+                "Segoe UI", 7.5F,
+                System.Drawing.FontStyle.Bold);
+            this.lbl_status.Location =
+                new System.Drawing.Point(400, 70);
+            this.lbl_status.Size =
+                new System.Drawing.Size(160, 16);
+
+            this.cmb_Status.Location =
+                new System.Drawing.Point(400, 90);
+            this.cmb_Status.Size =
+                new System.Drawing.Size(180, 28);
+            this.cmb_Status.Font = new System.Drawing.Font(
+                "Segoe UI", 10F);
+            this.cmb_Status.DropDownStyle =
+                System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmb_Status.FlatStyle =
+                System.Windows.Forms.FlatStyle.Flat;
+
+            this.pnl_fields.Controls.Add(this.lbl_fn);
+            this.pnl_fields.Controls.Add(this.txt_FirstName);
+            this.pnl_fields.Controls.Add(this.lbl_ln);
+            this.pnl_fields.Controls.Add(this.txt_LastName);
+            this.pnl_fields.Controls.Add(this.lbl_reg);
+            this.pnl_fields.Controls.Add(this.txt_RegNum);
+            this.pnl_fields.Controls.Add(this.lbl_email);
+            this.pnl_fields.Controls.Add(this.txt_Email);
+            this.pnl_fields.Controls.Add(this.lbl_contact);
+            this.pnl_fields.Controls.Add(this.txt_Contact);
+            this.pnl_fields.Controls.Add(this.lbl_status);
+            this.pnl_fields.Controls.Add(this.cmb_Status);
+
+            // Buttons panel
+            this.pnl_buttons.Dock =
+                System.Windows.Forms.DockStyle.Bottom;
+            this.pnl_buttons.Height = 52;
+            this.pnl_buttons.BackColor =
+                System.Drawing.Color.White;
+            this.pnl_buttons.Padding =
+                new System.Windows.Forms.Padding(16, 8, 16, 8);
+
+            MakeBtn(btn_Add, "Save Student",
+                System.Drawing.Color.FromArgb(26, 35, 126), 0);
+            MakeBtn(btn_Update, "Update",
+                System.Drawing.Color.FromArgb(0, 121, 107), 130);
+            MakeBtn(btn_Delete, "Delete",
+                System.Drawing.Color.FromArgb(183, 28, 28), 240);
+            MakeBtn(btn_Clear, "Cancel",
+                System.Drawing.Color.FromArgb(97, 97, 97), 340);
+
+            this.btn_Add.Click += new System.EventHandler(
+                this.btn_Add_Click);
+            this.btn_Update.Click += new System.EventHandler(
+                this.btn_Update_Click);
+            this.btn_Delete.Click += new System.EventHandler(
+                this.btn_Delete_Click);
+            this.btn_Clear.Click += new System.EventHandler(
+                this.btn_Clear_Click);
+
+            this.pnl_buttons.Controls.Add(this.btn_Add);
+            this.pnl_buttons.Controls.Add(this.btn_Update);
+            this.pnl_buttons.Controls.Add(this.btn_Delete);
+            this.pnl_buttons.Controls.Add(this.btn_Clear);
+
+            this.pnl_form.Controls.Add(this.pnl_fields);
+            this.pnl_form.Controls.Add(this.pnl_buttons);
+            this.pnl_form.Controls.Add(this.pnl_form_header);
+
+            // ── FORM SETUP ─────────────────────────────────
+            this.Controls.Add(this.pnl_grid);
+            this.Controls.Add(this.pnl_form);
+            this.Controls.Add(this.pnl_search);
+            this.Controls.Add(this.pnl_header);
+            this.BackColor =
+                System.Drawing.Color.FromArgb(248, 249, 252);
+
+            this.ResumeLayout(false);
         }
 
-        // ── CONTROL DECLARATIONS ───────────────────────────
-        private System.Windows.Forms.Panel pnl_top;
-        private System.Windows.Forms.Label lbl_title;
-        private System.Windows.Forms.TextBox txt_Search;
-        private System.Windows.Forms.Button btn_Search;
-        private System.Windows.Forms.DataGridView dgv_Students;
+        private void MakeField(
+            System.Windows.Forms.Label lbl,
+            System.Windows.Forms.TextBox txt,
+            string labelText, int x, int y)
+        {
+            lbl.Text = labelText;
+            lbl.ForeColor =
+                System.Drawing.Color.FromArgb(26, 35, 126);
+            lbl.Font = new System.Drawing.Font(
+                "Segoe UI", 7.5F,
+                System.Drawing.FontStyle.Bold);
+            lbl.Location = new System.Drawing.Point(x, y);
+            lbl.Size = new System.Drawing.Size(170, 16);
+
+            txt.Location =
+                new System.Drawing.Point(x, y + 20);
+            txt.Size = new System.Drawing.Size(180, 28);
+            txt.Font = new System.Drawing.Font("Segoe UI", 10F);
+            txt.BorderStyle =
+                System.Windows.Forms.BorderStyle.FixedSingle;
+        }
+
+        private void MakeBtn(
+            System.Windows.Forms.Button btn,
+            string text,
+            System.Drawing.Color color, int x)
+        {
+            btn.Text = text;
+            btn.Location = new System.Drawing.Point(x, 8);
+            btn.Size = new System.Drawing.Size(115, 34);
+            btn.BackColor = color;
+            btn.ForeColor = System.Drawing.Color.White;
+            btn.FlatStyle =
+                System.Windows.Forms.FlatStyle.Flat;
+            btn.FlatAppearance.BorderSize = 0;
+            btn.Font = new System.Drawing.Font(
+                "Segoe UI", 9.5F,
+                System.Drawing.FontStyle.Bold);
+            btn.Cursor = System.Windows.Forms.Cursors.Hand;
+        }
+
+        // Control declarations
+        private System.Windows.Forms.Panel pnl_header;
+        private System.Windows.Forms.Panel pnl_search;
+        private System.Windows.Forms.Panel pnl_grid;
         private System.Windows.Forms.Panel pnl_form;
+        private System.Windows.Forms.Panel pnl_form_header;
+        private System.Windows.Forms.Panel pnl_fields;
+        private System.Windows.Forms.Panel pnl_buttons;
+        private System.Windows.Forms.Label lbl_title;
+        private System.Windows.Forms.Label lbl_subtitle;
+        private System.Windows.Forms.Label lbl_form_title;
         private System.Windows.Forms.Label lbl_fn;
-        private System.Windows.Forms.TextBox txt_FirstName;
         private System.Windows.Forms.Label lbl_ln;
-        private System.Windows.Forms.TextBox txt_LastName;
         private System.Windows.Forms.Label lbl_reg;
-        private System.Windows.Forms.TextBox txt_RegNum;
         private System.Windows.Forms.Label lbl_email;
-        private System.Windows.Forms.TextBox txt_Email;
         private System.Windows.Forms.Label lbl_contact;
-        private System.Windows.Forms.TextBox txt_Contact;
         private System.Windows.Forms.Label lbl_status;
+        private System.Windows.Forms.TextBox txt_Search;
+        private System.Windows.Forms.TextBox txt_FirstName;
+        private System.Windows.Forms.TextBox txt_LastName;
+        private System.Windows.Forms.TextBox txt_RegNum;
+        private System.Windows.Forms.TextBox txt_Email;
+        private System.Windows.Forms.TextBox txt_Contact;
         private System.Windows.Forms.ComboBox cmb_Status;
+        private System.Windows.Forms.Button btn_Search;
+        private System.Windows.Forms.Button btn_Add_New;
         private System.Windows.Forms.Button btn_Add;
         private System.Windows.Forms.Button btn_Update;
         private System.Windows.Forms.Button btn_Delete;
         private System.Windows.Forms.Button btn_Clear;
+        private System.Windows.Forms.DataGridView dgv_Students;
     }
 }

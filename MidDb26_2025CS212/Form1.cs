@@ -18,14 +18,14 @@ namespace MidDb26_2025CS212
             if (!DBHelper.TestConnection())
             {
                 MessageBox.Show("Cannot connect to database!",
-                    "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    "Error", MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
                 Application.Exit();
                 return;
             }
-
             this.Hide();
-            StudentForm sf = new StudentForm();
-            sf.ShowDialog();
+            MainForm mf = new MainForm();
+            mf.ShowDialog();
             this.Close();
         }
     }
