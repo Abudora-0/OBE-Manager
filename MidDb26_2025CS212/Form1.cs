@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using MidDb26_2025CS212.Helpers;
+using MidDb26_2025CS212.Forms;
 
 namespace MidDb26_2025CS212
 {
@@ -14,16 +15,18 @@ namespace MidDb26_2025CS212
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            if (DBHelper.TestConnection())
-            {
-                MessageBox.Show("Database connected successfully!",
-                    "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            else
+            if (!DBHelper.TestConnection())
             {
                 MessageBox.Show("Cannot connect to database!",
                     "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Application.Exit();
+                return;
             }
+
+            this.Hide();
+            StudentForm sf = new StudentForm();
+            sf.ShowDialog();
+            this.Close();
         }
     }
 }
