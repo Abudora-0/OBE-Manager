@@ -98,6 +98,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAL\CloDAL.cs" />
+    <Compile Include="DAL\RubricDAL.cs" />
     <Compile Include="DAL\StudentDAL.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
