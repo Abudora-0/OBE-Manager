@@ -118,6 +118,12 @@
     <Compile Include="Forms\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\RubricForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RubricForm.Designer.cs">
+      <DependentUpon>RubricForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\StudentForm.cs">
       <SubType>Form</SubType>
     </Compile>
