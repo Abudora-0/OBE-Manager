@@ -140,7 +140,7 @@ namespace MidDb26_2025CS212.Forms
             this.btn_rubrics.Click += (s, e) =>
                 NavClick(btn_rubrics, "Rubrics", new RubricForm());
             this.btn_assessments.Click += (s, e) =>
-                MessageBox.Show("Coming soon!", "Assessments");
+                NavClick(btn_assessments, "Assessments", new AssessmentForm());
             this.btn_evaluations.Click += (s, e) =>
                 MessageBox.Show("Coming soon!", "Evaluations");
             this.btn_clo_report.Click += (s, e) =>
