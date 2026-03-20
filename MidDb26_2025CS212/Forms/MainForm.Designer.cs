@@ -142,7 +142,7 @@ namespace MidDb26_2025CS212.Forms
             this.btn_assessments.Click += (s, e) =>
                 NavClick(btn_assessments, "Assessments", new AssessmentForm());
             this.btn_evaluations.Click += (s, e) =>
-                MessageBox.Show("Coming soon!", "Evaluations");
+                NavClick(btn_evaluations, "Evaluations", new EvaluationForm());
             this.btn_clo_report.Click += (s, e) =>
                 MessageBox.Show("Coming soon!", "CLO Report");
             this.btn_assessment_report.Click += (s, e) =>

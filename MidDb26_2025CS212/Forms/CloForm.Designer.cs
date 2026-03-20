@@ -327,7 +327,6 @@
         private System.Windows.Forms.Label lbl_name;
         private System.Windows.Forms.TextBox txt_Search;
         private System.Windows.Forms.TextBox txt_Name;
-        private System.Windows.Forms.ComboBox cmb_Status;
         private System.Windows.Forms.Button btn_Search;
         private System.Windows.Forms.Button btn_Add_New;
         private System.Windows.Forms.Button btn_Add;
