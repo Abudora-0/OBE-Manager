@@ -162,6 +162,23 @@ namespace MidDb26_2025CS212.Forms
             }
         }
 
+        private void btn_Report_Click(object sender, EventArgs e)
+        {
+            if (selectedId == -1)
+            {
+                MessageBox.Show(
+                    "Please select a student to generate report.",
+                    "No Selection", MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+                return;
+            }
+            string name = txt_FirstName.Text + " " +
+                txt_LastName.Text;
+            Reports.ReportHelper.GenerateStudentReport(
+                selectedId, name);
+        }
+
+
         private void btn_Clear_Click(object sender, EventArgs e)
         {
             ClearForm();

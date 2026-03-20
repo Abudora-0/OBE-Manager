@@ -42,6 +42,7 @@
             this.btn_Add = new System.Windows.Forms.Button();
             this.btn_Update = new System.Windows.Forms.Button();
             this.btn_Delete = new System.Windows.Forms.Button();
+            this.btn_Report = new System.Windows.Forms.Button();
             this.btn_Clear = new System.Windows.Forms.Button();
 
             this.SuspendLayout();
@@ -304,6 +305,8 @@
                 System.Drawing.Color.FromArgb(0, 121, 107), 130);
             MakeBtn(btn_Delete, "Delete",
                 System.Drawing.Color.FromArgb(183, 28, 28), 240);
+            MakeBtn(btn_Report, "Report",
+                System.Drawing.Color.FromArgb(0, 121, 107), 460);
             MakeBtn(btn_Clear, "Cancel",
                 System.Drawing.Color.FromArgb(97, 97, 97), 340);
 
@@ -313,12 +316,15 @@
                 this.btn_Update_Click);
             this.btn_Delete.Click += new System.EventHandler(
                 this.btn_Delete_Click);
+            this.btn_Report.Click += new System.EventHandler(
+                this.btn_Report_Click);
             this.btn_Clear.Click += new System.EventHandler(
                 this.btn_Clear_Click);
 
             this.pnl_buttons.Controls.Add(this.btn_Add);
             this.pnl_buttons.Controls.Add(this.btn_Update);
             this.pnl_buttons.Controls.Add(this.btn_Delete);
+            this.pnl_buttons.Controls.Add(this.btn_Report);
             this.pnl_buttons.Controls.Add(this.btn_Clear);
 
             this.pnl_form.Controls.Add(this.pnl_fields);
@@ -406,6 +412,7 @@
         private System.Windows.Forms.Button btn_Add;
         private System.Windows.Forms.Button btn_Update;
         private System.Windows.Forms.Button btn_Delete;
+        private System.Windows.Forms.Button btn_Report;
         private System.Windows.Forms.Button btn_Clear;
         private System.Windows.Forms.DataGridView dgv_Students;
     }

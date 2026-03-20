@@ -150,9 +150,9 @@ namespace MidDb26_2025CS212.Forms
                 NavClick(btn_evaluations, "Evaluations",
                 new EvaluationForm());
             this.btn_clo_report.Click += (s, e) =>
-                MessageBox.Show("Coming soon!", "CLO Report");
+                MidDb26_2025CS212.Reports.ReportHelper.GenerateCloWiseReport();
             this.btn_assessment_report.Click += (s, e) =>
-                MessageBox.Show("Coming soon!", "Assessment Report");
+                MidDb26_2025CS212.Reports.ReportHelper.GenerateAssessmentWiseReport();
 
             // Add controls to nav panel
             this.pnl_nav.Controls.Add(this.lbl_nav_label);
