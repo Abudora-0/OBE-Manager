@@ -55,13 +55,14 @@ namespace MidDb26_2025CS212.DAL
                     DBHelper.GetConnection())
                 {
                     string query = @"
-                        INSERT INTO classattendance
-                            (AttendanceDate)
-                        VALUES (@date);
-                        SELECT LAST_INSERT_ID();";
+                INSERT INTO classattendance
+                    (AttendanceDate)
+                VALUES (@date);
+                SELECT LAST_INSERT_ID();";
                     MySqlCommand cmd =
                         new MySqlCommand(query, con);
-                    cmd.Parameters.AddWithValue("@date", date);
+                    cmd.Parameters.AddWithValue(
+                        "@date", date);
                     con.Open();
                     return Convert.ToInt32(
                         cmd.ExecuteScalar());
@@ -112,8 +113,8 @@ namespace MidDb26_2025CS212.DAL
         }
 
         // Get all students with attendance for a session
-        public List<StudentAttendanceView>
-            GetSessionAttendance(int sessionId)
+    public List<StudentAttendanceView>
+     GetSessionAttendance(int sessionId)
         {
             var list = new List<StudentAttendanceView>();
             try
@@ -122,20 +123,17 @@ namespace MidDb26_2025CS212.DAL
                     DBHelper.GetConnection())
                 {
                     string query = @"
-                        SELECT s.Id as StudentId,
-                            CONCAT(s.FirstName,' ',s.LastName)
-                                as StudentName,
-                            s.RegistrationNumber,
-                            COALESCE(sa.AttendanceStatus, 1)
-                                as StatusId,
-                            l.Name as StatusName
-                        FROM student s
-                        LEFT JOIN studentattendance sa
-                            ON s.Id = sa.StudentId
-                            AND sa.AttendanceId = @sessionId
-                        LEFT JOIN lookup l
-                            ON sa.AttendanceStatus = l.LookupId
-                        ORDER BY s.FirstName ASC";
+                SELECT s.Id as StudentId,
+                    CONCAT(s.FirstName,' ',s.LastName)
+                        as StudentName,
+                    s.RegistrationNumber,
+                    COALESCE(sa.AttendanceStatus, 1)
+                        as StatusId
+                FROM student s
+                LEFT JOIN studentattendance sa
+                    ON s.Id = sa.StudentId
+                    AND sa.AttendanceId = @sessionId
+                ORDER BY s.FirstName ASC";
                     MySqlCommand cmd =
                         new MySqlCommand(query, con);
                     cmd.Parameters.AddWithValue(
@@ -148,7 +146,8 @@ namespace MidDb26_2025CS212.DAL
                         list.Add(new StudentAttendanceView
                         {
                             StudentId =
-                                (int)reader["StudentId"],
+                                Convert.ToInt32(
+                                    reader["StudentId"]),
                             StudentName =
                                 reader["StudentName"]
                                 .ToString(),
@@ -156,11 +155,9 @@ namespace MidDb26_2025CS212.DAL
                                 reader["RegistrationNumber"]
                                 .ToString(),
                             StatusId =
-                                (int)reader["StatusId"],
-                            StatusName =
-                                reader["StatusName"] == DBNull
-                                .Value ? "Present" :
-                                reader["StatusName"].ToString()
+                                Convert.ToInt32(
+                                    reader["StatusId"]),
+                            StatusName = "Present"
                         });
                     }
                 }
