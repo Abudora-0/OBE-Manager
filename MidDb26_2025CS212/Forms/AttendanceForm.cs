@@ -28,6 +28,16 @@ namespace MidDb26_2025CS212.Forms
             LoadSessions();
         }
 
+        private void btn_home_Click(object sender, EventArgs e)
+        {
+            // Navigate back to dashboard
+            Form parentForm = this.ParentForm;
+            if (parentForm is MainForm main)
+            {
+                main.ShowDashboard();
+            }
+        }
+
         // ── SESSION MANAGEMENT ─────────────────────────────
 
         private void LoadSessions()

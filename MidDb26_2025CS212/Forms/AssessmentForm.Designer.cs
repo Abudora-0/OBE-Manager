@@ -16,6 +16,7 @@
             this.pnl_header = new System.Windows.Forms.Panel();
             this.lbl_title = new System.Windows.Forms.Label();
             this.lbl_subtitle = new System.Windows.Forms.Label();
+            this.btn_home = new System.Windows.Forms.Button();
             this.pnl_body = new System.Windows.Forms.Panel();
             this.pnl_left = new System.Windows.Forms.Panel();
             this.pnl_right = new System.Windows.Forms.Panel();
@@ -85,8 +86,29 @@
             this.lbl_subtitle.Size =
                 new System.Drawing.Size(500, 20);
 
+            this.btn_home.Text = "⌂ Dashboard";
+            this.btn_home.Location =
+                new System.Drawing.Point(1050, 18);
+            this.btn_home.Size =
+                new System.Drawing.Size(120, 32);
+            this.btn_home.BackColor =
+                System.Drawing.Color.FromArgb(57, 73, 171);
+            this.btn_home.ForeColor =
+                System.Drawing.Color.White;
+            this.btn_home.FlatStyle =
+                System.Windows.Forms.FlatStyle.Flat;
+            this.btn_home.FlatAppearance.BorderSize = 0;
+            this.btn_home.Font = new System.Drawing.Font(
+                "Segoe UI", 9F,
+                System.Drawing.FontStyle.Bold);
+            this.btn_home.Cursor =
+                System.Windows.Forms.Cursors.Hand;
+            this.btn_home.Click +=
+                new System.EventHandler(this.btn_home_Click);
+
             this.pnl_header.Controls.Add(this.lbl_title);
             this.pnl_header.Controls.Add(this.lbl_subtitle);
+            this.pnl_header.Controls.Add(this.btn_home);
 
             // ── BODY PANEL ─────────────────────────────────
             this.pnl_body.Dock =
@@ -586,6 +608,7 @@
         private System.Windows.Forms.Label lbl_components;
         private System.Windows.Forms.Label lbl_af_title;
         private System.Windows.Forms.Label lbl_cf_title;
+        private System.Windows.Forms.Button btn_home;
         private System.Windows.Forms.Label lbl_atitle;
         private System.Windows.Forms.Label lbl_marks;
         private System.Windows.Forms.Label lbl_weightage;

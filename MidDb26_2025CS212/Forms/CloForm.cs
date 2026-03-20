@@ -22,6 +22,16 @@ namespace MidDb26_2025CS212.Forms
             LoadClos();
         }
 
+        private void btn_home_Click(object sender, EventArgs e)
+        {
+            // Navigate back to dashboard
+            Form parentForm = this.ParentForm;
+            if (parentForm is MainForm main)
+            {
+                main.ShowDashboard();
+            }
+        }
+
         private void LoadClos()
         {
             try

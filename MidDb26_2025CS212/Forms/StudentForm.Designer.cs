@@ -16,6 +16,7 @@
             this.pnl_header = new System.Windows.Forms.Panel();
             this.lbl_title = new System.Windows.Forms.Label();
             this.lbl_subtitle = new System.Windows.Forms.Label();
+            this.btn_home = new System.Windows.Forms.Button();
             this.pnl_search = new System.Windows.Forms.Panel();
             this.txt_Search = new System.Windows.Forms.TextBox();
             this.btn_Search = new System.Windows.Forms.Button();
@@ -55,6 +56,7 @@
             this.pnl_header.Height = 70;
             this.pnl_header.Controls.Add(this.lbl_title);
             this.pnl_header.Controls.Add(this.lbl_subtitle);
+            this.pnl_header.Controls.Add(this.btn_home);
 
             this.lbl_title.Text = "Manage Students";
             this.lbl_title.ForeColor =
@@ -77,6 +79,26 @@
                 new System.Drawing.Point(20, 42);
             this.lbl_subtitle.Size =
                 new System.Drawing.Size(400, 20);
+
+            this.btn_home.Text = "⌂ Dashboard";
+            this.btn_home.Location =
+                new System.Drawing.Point(850, 18);
+            this.btn_home.Size =
+                new System.Drawing.Size(120, 32);
+            this.btn_home.BackColor =
+                System.Drawing.Color.FromArgb(57, 73, 171);
+            this.btn_home.ForeColor =
+                System.Drawing.Color.White;
+            this.btn_home.FlatStyle =
+                System.Windows.Forms.FlatStyle.Flat;
+            this.btn_home.FlatAppearance.BorderSize = 0;
+            this.btn_home.Font = new System.Drawing.Font(
+                "Segoe UI", 9F,
+                System.Drawing.FontStyle.Bold);
+            this.btn_home.Cursor =
+                System.Windows.Forms.Cursors.Hand;
+            this.btn_home.Click +=
+                new System.EventHandler(this.btn_home_Click);
 
             // ── SEARCH PANEL ───────────────────────────────
             this.pnl_search.BackColor =
@@ -400,6 +422,7 @@
         private System.Windows.Forms.Label lbl_email;
         private System.Windows.Forms.Label lbl_contact;
         private System.Windows.Forms.Label lbl_status;
+        private System.Windows.Forms.Button btn_home;
         private System.Windows.Forms.TextBox txt_Search;
         private System.Windows.Forms.TextBox txt_FirstName;
         private System.Windows.Forms.TextBox txt_LastName;

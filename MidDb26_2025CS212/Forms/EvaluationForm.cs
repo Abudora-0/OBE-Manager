@@ -27,6 +27,15 @@ namespace MidDb26_2025CS212.Forms
             LoadAssessments();
         }
 
+        private void btn_home_Click(object sender, EventArgs e)
+        {
+            Form parentForm = this.ParentForm;
+            if (parentForm is MainForm main)
+            {
+                main.ShowDashboard();
+            }
+        }
+
         private void LoadStudents()
         {
             try

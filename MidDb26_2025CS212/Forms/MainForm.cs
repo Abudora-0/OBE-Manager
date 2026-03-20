@@ -103,5 +103,32 @@ namespace MidDb26_2025CS212.Forms
             // Refresh stats after navigation
             UpdateStats();
         }
+
+        public void ShowDashboard()
+        {
+            // Reset active button
+            if (activeNavBtn != null)
+            {
+                activeNavBtn.ForeColor =
+                    System.Drawing.Color.FromArgb(
+                        160, 180, 230);
+                activeNavBtn.BackColor =
+                    System.Drawing.Color.Transparent;
+                activeNavBtn = null;
+            }
+
+            // Update page title
+            lbl_page_title.Text = "📊 Dashboard";
+
+            // Clear content panels and show dashboard
+            pnl_main.Controls.Clear();
+            pnl_welcome.Dock = DockStyle.Top;
+            pnl_stats.Dock = DockStyle.Top;
+            pnl_main.Controls.Add(pnl_stats);
+            pnl_main.Controls.Add(pnl_welcome);
+
+            // Refresh stats
+            UpdateStats();
+        }
     }
 }
