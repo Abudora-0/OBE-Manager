@@ -101,6 +101,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAL\AssessmentDAL.cs" />
+    <Compile Include="DAL\AttendanceDAL.cs" />
     <Compile Include="DAL\CloDAL.cs" />
     <Compile Include="DAL\EvaluationDAL.cs.cs" />
     <Compile Include="DAL\RubricDAL.cs" />
