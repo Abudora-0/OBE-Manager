@@ -24,6 +24,7 @@ namespace MidDb26_2025CS212.Forms
             this.btn_students = new System.Windows.Forms.Button();
             this.btn_clos = new System.Windows.Forms.Button();
             this.btn_rubrics = new System.Windows.Forms.Button();
+            this.btn_rubric_levels = new System.Windows.Forms.Button();
             this.btn_assessments = new System.Windows.Forms.Button();
             this.btn_evaluations = new System.Windows.Forms.Button();
             this.lbl_reports_label = new System.Windows.Forms.Label();
@@ -113,8 +114,9 @@ namespace MidDb26_2025CS212.Forms
             MakeNavBtn(btn_students, "    Students", 42);
             MakeNavBtn(btn_clos, "    CLOs", 88);
             MakeNavBtn(btn_rubrics, "    Rubrics", 134);
-            MakeNavBtn(btn_assessments, "    Assessments", 180);
-            MakeNavBtn(btn_evaluations, "    Evaluations", 226);
+            MakeNavBtn(btn_rubric_levels, "    Rubric Levels", 180);
+            MakeNavBtn(btn_assessments, "    Assessments", 226);
+            MakeNavBtn(btn_evaluations, "    Evaluations", 272);
 
             this.lbl_reports_label.Text = "REPORTS";
             this.lbl_reports_label.ForeColor =
@@ -123,26 +125,30 @@ namespace MidDb26_2025CS212.Forms
                 "Segoe UI", 7.5F,
                 System.Drawing.FontStyle.Bold);
             this.lbl_reports_label.Location =
-                new System.Drawing.Point(20, 288);
+                new System.Drawing.Point(20, 330);
             this.lbl_reports_label.Size =
                 new System.Drawing.Size(190, 18);
 
-            MakeNavBtn(btn_clo_report, "    CLO Wise Report", 310);
+            MakeNavBtn(btn_clo_report, "    CLO Wise Report", 352);
             MakeNavBtn(btn_assessment_report,
-                "    Assessment Report", 356);
+                "    Assessment Report", 398);
 
-            // Wire up click events
+            // Wire up clicks
             this.btn_students.Click += (s, e) =>
-                NavClick(btn_students, "Students",
-                new StudentForm());
+                NavClick(btn_students, "Students", new StudentForm());
             this.btn_clos.Click += (s, e) =>
                 NavClick(btn_clos, "CLOs", new CloForm());
             this.btn_rubrics.Click += (s, e) =>
                 NavClick(btn_rubrics, "Rubrics", new RubricForm());
+            this.btn_rubric_levels.Click += (s, e) =>
+                NavClick(btn_rubric_levels, "Rubric Levels",
+                new RubricLevelForm());
             this.btn_assessments.Click += (s, e) =>
-                NavClick(btn_assessments, "Assessments", new AssessmentForm());
+                NavClick(btn_assessments, "Assessments",
+                new AssessmentForm());
             this.btn_evaluations.Click += (s, e) =>
-                NavClick(btn_evaluations, "Evaluations", new EvaluationForm());
+                NavClick(btn_evaluations, "Evaluations",
+                new EvaluationForm());
             this.btn_clo_report.Click += (s, e) =>
                 MessageBox.Show("Coming soon!", "CLO Report");
             this.btn_assessment_report.Click += (s, e) =>
@@ -153,6 +159,7 @@ namespace MidDb26_2025CS212.Forms
             this.pnl_nav.Controls.Add(this.btn_students);
             this.pnl_nav.Controls.Add(this.btn_clos);
             this.pnl_nav.Controls.Add(this.btn_rubrics);
+            this.pnl_nav.Controls.Add(this.btn_rubric_levels);
             this.pnl_nav.Controls.Add(this.btn_assessments);
             this.pnl_nav.Controls.Add(this.btn_evaluations);
             this.pnl_nav.Controls.Add(this.lbl_reports_label);
@@ -400,6 +407,7 @@ namespace MidDb26_2025CS212.Forms
         private System.Windows.Forms.Button btn_students;
         private System.Windows.Forms.Button btn_clos;
         private System.Windows.Forms.Button btn_rubrics;
+        private System.Windows.Forms.Button btn_rubric_levels;
         private System.Windows.Forms.Button btn_assessments;
         private System.Windows.Forms.Button btn_evaluations;
         private System.Windows.Forms.Button btn_clo_report;
