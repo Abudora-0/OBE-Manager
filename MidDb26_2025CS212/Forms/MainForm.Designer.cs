@@ -16,6 +16,7 @@ namespace MidDb26_2025CS212.Forms
         private void InitializeComponent()
         {
             this.pnl_sidebar = new System.Windows.Forms.Panel();
+            this.pic_Logo = new System.Windows.Forms.PictureBox();
             this.pnl_logo = new System.Windows.Forms.Panel();
             this.lbl_appname = new System.Windows.Forms.Label();
             this.lbl_appsub = new System.Windows.Forms.Label();
@@ -69,7 +70,7 @@ namespace MidDb26_2025CS212.Forms
                 System.Drawing.Color.FromArgb(21, 28, 100);
             this.pnl_logo.Dock =
                 System.Windows.Forms.DockStyle.Top;
-            this.pnl_logo.Height = 80;
+            this.pnl_logo.Height = 90;
             this.pnl_logo.Controls.Add(this.lbl_appname);
             this.pnl_logo.Controls.Add(this.lbl_appsub);
 
@@ -80,9 +81,9 @@ namespace MidDb26_2025CS212.Forms
                 "Segoe UI", 14F,
                 System.Drawing.FontStyle.Bold);
             this.lbl_appname.Location =
-                new System.Drawing.Point(18, 18);
+                new System.Drawing.Point(62, 14);
             this.lbl_appname.Size =
-                new System.Drawing.Size(200, 28);
+                new System.Drawing.Size(160, 28);
 
             this.lbl_appsub.Text = "CS104  ·  Spring 2026";
             this.lbl_appsub.ForeColor =
@@ -90,9 +91,26 @@ namespace MidDb26_2025CS212.Forms
             this.lbl_appsub.Font = new System.Drawing.Font(
                 "Segoe UI", 8F);
             this.lbl_appsub.Location =
-                new System.Drawing.Point(18, 48);
+                new System.Drawing.Point(62, 44);
             this.lbl_appsub.Size =
-                new System.Drawing.Size(200, 18);
+                new System.Drawing.Size(160, 18);
+
+            this.pic_Logo.Location =
+            new System.Drawing.Point(10, 8);
+            this.pic_Logo.Size =
+                new System.Drawing.Size(44, 44);
+            this.pic_Logo.SizeMode =
+                System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pic_Logo.BackColor =
+                System.Drawing.Color.Transparent;
+            try
+            {
+                this.pic_Logo.Image = System.Drawing.Image.FromFile(
+                    Application.StartupPath + "\\uet logo.png");
+            }
+            catch { }
+
+            this.pnl_logo.Controls.Add(this.pic_Logo);
 
             // Nav panel
             this.pnl_nav.Dock =
@@ -382,6 +400,7 @@ namespace MidDb26_2025CS212.Forms
         private System.Windows.Forms.Panel pnl_logo;
         private System.Windows.Forms.Panel pnl_nav;
         private System.Windows.Forms.Panel pnl_footer;
+        private System.Windows.Forms.PictureBox pic_Logo;
         private System.Windows.Forms.Panel pnl_content;
         private System.Windows.Forms.Panel pnl_topbar;
         private System.Windows.Forms.Panel pnl_main;

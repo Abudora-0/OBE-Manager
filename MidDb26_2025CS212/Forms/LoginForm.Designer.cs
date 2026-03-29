@@ -26,6 +26,7 @@
             this.txt_Password = new System.Windows.Forms.TextBox();
             this.btn_Login = new System.Windows.Forms.Button();
             this.lbl_error = new System.Windows.Forms.Label();
+            this.pic_Logo = new System.Windows.Forms.PictureBox();
             this.lbl_hint = new System.Windows.Forms.Label();
 
             this.SuspendLayout();
@@ -41,6 +42,23 @@
             this.pnl_left.Controls.Add(this.lbl_appsub);
             this.pnl_left.Controls.Add(this.lbl_desc);
 
+            this.pic_Logo.Location =
+            new System.Drawing.Point(85, 40);
+            this.pic_Logo.Size =
+                new System.Drawing.Size(120, 120);
+            this.pic_Logo.SizeMode =
+                System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pic_Logo.BackColor =
+                System.Drawing.Color.Transparent;
+            try
+            {
+                this.pic_Logo.Image = System.Drawing.Image.FromFile(
+                    "uet logo.png");
+            }
+            catch { }
+
+            this.pnl_left.Controls.Add(this.pic_Logo);
+
             this.lbl_appname.Text = "OBE Manager";
             this.lbl_appname.ForeColor =
                 System.Drawing.Color.White;
@@ -48,7 +66,7 @@
                 "Segoe UI", 26F,
                 System.Drawing.FontStyle.Bold);
             this.lbl_appname.Location =
-                new System.Drawing.Point(30, 140);
+                new System.Drawing.Point(23, 170);
             this.lbl_appname.Size =
                 new System.Drawing.Size(280, 50);
 
@@ -59,7 +77,7 @@
             this.lbl_appsub.Font = new System.Drawing.Font(
                 "Segoe UI", 11F);
             this.lbl_appsub.Location =
-                new System.Drawing.Point(30, 196);
+                new System.Drawing.Point(30, 216);
             this.lbl_appsub.Size =
                 new System.Drawing.Size(280, 24);
 
@@ -241,6 +259,7 @@
         private System.Windows.Forms.Label lbl_error;
         private System.Windows.Forms.Label lbl_hint;
         private System.Windows.Forms.TextBox txt_Username;
+        private System.Windows.Forms.PictureBox pic_Logo;
         private System.Windows.Forms.TextBox txt_Password;
         private System.Windows.Forms.Button btn_Login;
     }
