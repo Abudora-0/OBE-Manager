@@ -31,7 +31,7 @@
 
             this.SuspendLayout();
 
-            // ── LEFT PANEL ─────────────────────────────────
+            // LEFT PANEL
             this.pnl_left.BackColor =
                 System.Drawing.Color.FromArgb(26, 35, 126);
             this.pnl_left.Location =
@@ -97,7 +97,7 @@
             this.lbl_desc.Size =
                 new System.Drawing.Size(280, 160);
 
-            // ── RIGHT PANEL ────────────────────────────────
+            // RIGHT PANEL
             this.pnl_right.BackColor =
                 System.Drawing.Color.White;
             this.pnl_right.Location =
@@ -228,7 +228,7 @@
             this.lbl_hint.TextAlign =
                 System.Drawing.ContentAlignment.MiddleCenter;
 
-            // ── MAIN FORM ──────────────────────────────────
+            // MAIN FORM 
             this.Controls.Add(this.pnl_left);
             this.Controls.Add(this.pnl_right);
             this.Text = "OBE Manager — Login";

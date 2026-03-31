@@ -58,7 +58,7 @@ namespace MidDb26_2025CS212.Forms
 
             this.SuspendLayout();
 
-            // ── SIDEBAR ────────────────────────────────────
+            // SIDEBAR
             this.pnl_sidebar.BackColor =
                 System.Drawing.Color.FromArgb(26, 35, 126);
             this.pnl_sidebar.Dock =
@@ -223,7 +223,7 @@ namespace MidDb26_2025CS212.Forms
             this.pnl_sidebar.Controls.Add(this.pnl_footer);
             this.pnl_sidebar.Controls.Add(this.pnl_logo);
 
-            // ── CONTENT AREA ───────────────────────────────
+            // CONTENT AREA 
             this.pnl_content.BackColor =
                 System.Drawing.Color.FromArgb(248, 249, 252);
             this.pnl_content.Dock =
@@ -320,7 +320,7 @@ namespace MidDb26_2025CS212.Forms
             this.pnl_content.Controls.Add(this.pnl_main);
             this.pnl_content.Controls.Add(this.pnl_topbar);
 
-            // ── MAIN FORM ──────────────────────────────────
+            // MAIN FORM
             this.Controls.Add(this.pnl_content);
             this.Controls.Add(this.pnl_sidebar);
             this.Text = "OBE Manager — MidDb26_2025CS212";

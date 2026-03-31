@@ -39,7 +39,7 @@ namespace MidDb26_2025CS212.Forms
 
             this.SuspendLayout();
 
-            // ── HEADER ─────────────────────────────────────
+            // HEADER
             this.pnl_header.BackColor =
                 System.Drawing.Color.FromArgb(26, 35, 126);
             this.pnl_header.Dock =
@@ -92,13 +92,13 @@ namespace MidDb26_2025CS212.Forms
             this.pnl_header.Controls.Add(this.lbl_subtitle);
             this.pnl_header.Controls.Add(this.btn_home);
 
-            // ── BODY ───────────────────────────────────────
+            // BODY
             this.pnl_body.Dock =
                 System.Windows.Forms.DockStyle.Fill;
             this.pnl_body.BackColor =
                 System.Drawing.Color.FromArgb(248, 249, 252);
 
-            // ── LEFT PANEL ─────────────────────────────────
+            // LEFT PANEL
             this.pnl_left.Location =
                 new System.Drawing.Point(10, 10);
             this.pnl_left.Size =
@@ -308,7 +308,7 @@ namespace MidDb26_2025CS212.Forms
             this.pnl_left.Controls.Add(this.dgv_Sessions);
             this.pnl_left.Controls.Add(this.pnl_date_picker);
 
-            // ── RIGHT PANEL ────────────────────────────────
+            // RIGHT PANEL
             this.pnl_right.Location =
                 new System.Drawing.Point(320, 10);
             this.pnl_right.Size =

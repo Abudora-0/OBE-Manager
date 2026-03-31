@@ -48,7 +48,7 @@
 
             this.SuspendLayout();
 
-            // ── HEADER PANEL ───────────────────────────────
+            // HEADER PANEL
             this.pnl_header.BackColor =
                 System.Drawing.Color.FromArgb(26, 35, 126);
             this.pnl_header.Dock =
@@ -100,7 +100,7 @@
             this.btn_home.Click +=
                 new System.EventHandler(this.btn_home_Click);
 
-            // ── SEARCH PANEL ───────────────────────────────
+            // SEARCH PANEL
             this.pnl_search.BackColor =
                 System.Drawing.Color.White;
             this.pnl_search.Dock =
@@ -163,7 +163,7 @@
             this.pnl_search.Controls.Add(this.btn_Search);
             this.pnl_search.Controls.Add(this.btn_Add_New);
 
-            // ── GRID PANEL ─────────────────────────────────
+            // GRID PANEL
             this.pnl_grid.Dock =
                 System.Windows.Forms.DockStyle.Fill;
             this.pnl_grid.Padding =
@@ -227,7 +227,7 @@
 
             this.pnl_grid.Controls.Add(this.dgv_Students);
 
-            // ── FORM PANEL ─────────────────────────────────
+            // FORM PANEL
             this.pnl_form.Dock =
                 System.Windows.Forms.DockStyle.Bottom;
             this.pnl_form.Height = 220;
@@ -353,7 +353,7 @@
             this.pnl_form.Controls.Add(this.pnl_buttons);
             this.pnl_form.Controls.Add(this.pnl_form_header);
 
-            // ── FORM SETUP ─────────────────────────────────
+            // FORM SETUP 
             this.Controls.Add(this.pnl_grid);
             this.Controls.Add(this.pnl_form);
             this.Controls.Add(this.pnl_search);

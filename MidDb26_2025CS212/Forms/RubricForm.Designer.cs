@@ -43,7 +43,7 @@ namespace MidDb26_2025CS212.Forms
 
             this.SuspendLayout();
 
-            // ── HEADER ─────────────────────────────────────
+            // HEADER
             this.pnl_header.BackColor =
                 System.Drawing.Color.FromArgb(26, 35, 126);
             this.pnl_header.Dock =
@@ -160,7 +160,7 @@ namespace MidDb26_2025CS212.Forms
             this.pnl_search.Controls.Add(this.btn_Search);
             this.pnl_search.Controls.Add(this.btn_Add_New);
 
-            // ── GRID ───────────────────────────────────────
+            // GRID 
             this.pnl_grid.Dock =
                 System.Windows.Forms.DockStyle.Fill;
             this.pnl_grid.Padding =
@@ -221,7 +221,7 @@ namespace MidDb26_2025CS212.Forms
 
             this.pnl_grid.Controls.Add(this.dgv_Rubrics);
 
-            // ── FORM PANEL ─────────────────────────────────
+            // FORM PANEL 
             this.pnl_form.Dock =
                 System.Windows.Forms.DockStyle.Bottom;
             this.pnl_form.Height = 200;

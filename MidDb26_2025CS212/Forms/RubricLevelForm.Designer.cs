@@ -49,7 +49,7 @@
 
             this.SuspendLayout();
 
-            // ── HEADER ─────────────────────────────────────
+            // HEADER
             this.pnl_header.BackColor =
                 System.Drawing.Color.FromArgb(26, 35, 126);
             this.pnl_header.Dock =
@@ -103,7 +103,7 @@
             this.pnl_header.Controls.Add(this.btn_home);
             this.pnl_header.Controls.Add(this.lbl_subtitle);
 
-            // ── SEARCH/FILTER PANEL ────────────────────────
+            // SEARCH/FILTER PANEL
             this.pnl_search.BackColor =
                 System.Drawing.Color.White;
             this.pnl_search.Dock =
@@ -180,7 +180,7 @@
             this.pnl_search.Controls.Add(this.btn_filter);
             this.pnl_search.Controls.Add(this.btn_Add_New);
 
-            // ── GRID ───────────────────────────────────────
+            // GRID 
             this.pnl_grid.Dock =
                 System.Windows.Forms.DockStyle.Fill;
             this.pnl_grid.Padding =
@@ -241,7 +241,7 @@
 
             this.pnl_grid.Controls.Add(this.dgv_Levels);
 
-            // ── FORM PANEL ─────────────────────────────────
+            // FORM PANEL
             this.pnl_form.Dock =
                 System.Windows.Forms.DockStyle.Bottom;
             this.pnl_form.Height = 220;

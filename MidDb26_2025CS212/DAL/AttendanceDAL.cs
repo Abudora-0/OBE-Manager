@@ -112,7 +112,7 @@ namespace MidDb26_2025CS212.DAL
             }
         }
 
-        // Get all students with attendance for a session
+    // Get all students with attendance for a session
     public List<StudentAttendanceView>
      GetSessionAttendance(int sessionId)
         {

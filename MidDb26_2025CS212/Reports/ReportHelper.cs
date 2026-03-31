@@ -11,7 +11,7 @@ namespace MidDb26_2025CS212.Reports
 {
     public class ReportHelper
     {
-        // ── COLORS ─────────────────────────────────────────
+        // COLORS 
         private static BaseColor NavyBlue =
             new BaseColor(26, 35, 126);
         private static BaseColor LightBlue =
@@ -27,7 +27,7 @@ namespace MidDb26_2025CS212.Reports
         private static BaseColor Red =
             new BaseColor(183, 28, 28);
 
-        // ── FONTS ──────────────────────────────────────────
+        // FONTS
         private static Font TitleFont =
             FontFactory.GetFont(FontFactory.HELVETICA_BOLD,
                 18, White);
@@ -47,7 +47,7 @@ namespace MidDb26_2025CS212.Reports
             FontFactory.GetFont(FontFactory.HELVETICA,
                 8, DarkGray);
 
-        // ── CLO WISE REPORT ────────────────────────────────
+        // CLO WISE REPORT
         public static void GenerateCloWiseReport()
         {
             try
@@ -142,7 +142,7 @@ namespace MidDb26_2025CS212.Reports
             }
         }
 
-        // ── ASSESSMENT WISE REPORT ─────────────────────────
+        // ASSESSMENT WISE REPORT
         public static void GenerateAssessmentWiseReport()
         {
             try
@@ -263,7 +263,7 @@ namespace MidDb26_2025CS212.Reports
             }
         }
 
-        // ── STUDENT REPORT ─────────────────────────────────
+        // STUDENT REPORT
         public static void GenerateStudentReport(
             int studentId, string studentName)
         {
@@ -416,7 +416,7 @@ namespace MidDb26_2025CS212.Reports
             }
         }
 
-        // ── HELPER METHODS ─────────────────────────────────
+        // HELPER METHODS
 
         private static void AddReportHeader(
             Document doc, string title, string subtitle)
@@ -499,7 +499,7 @@ namespace MidDb26_2025CS212.Reports
             doc.Add(footer);
         }
 
-        // ── DATA QUERIES ───────────────────────────────────
+        // DATA QUERIES 
 
         private static Dictionary<string,
             List<string[]>> GetCloWiseData()

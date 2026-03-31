@@ -38,7 +38,7 @@ namespace MidDb26_2025CS212.Forms
             }
         }
 
-        // ── SESSION MANAGEMENT ─────────────────────────────
+        // SESSION MANAGEMENT
 
         private void LoadSessions()
         {
@@ -161,7 +161,7 @@ namespace MidDb26_2025CS212.Forms
             }
         }
 
-        // ── ATTENDANCE ─────────────────────────────────────
+        // ATTENDANCE 
 
         private void LoadAttendance(int sessionId)
         {

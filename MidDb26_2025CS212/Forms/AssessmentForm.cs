@@ -103,7 +103,7 @@ namespace MidDb26_2025CS212.Forms
                     .Visible = false;
         }
 
-        // ── ASSESSMENT EVENTS ──────────────────────────────
+        // ASSESSMENT EVENTS
 
         private void dgv_Assessments_CellClick(object sender,
             DataGridViewCellEventArgs e)
@@ -234,7 +234,7 @@ namespace MidDb26_2025CS212.Forms
             }
         }
 
-        // ── COMPONENT EVENTS ───────────────────────────────
+        // COMPONENT EVENTS
 
         private void dgv_Components_CellClick(object sender,
             DataGridViewCellEventArgs e)
@@ -366,7 +366,7 @@ namespace MidDb26_2025CS212.Forms
             }
         }
 
-        // ── VALIDATION & HELPERS ───────────────────────────
+        // VALIDATION & HELPERS
 
         private bool ValidateAssessment()
         {

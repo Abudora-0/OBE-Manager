@@ -38,7 +38,7 @@
 
             this.SuspendLayout();
 
-            // ── HEADER ─────────────────────────────────────
+            // HEADER
             this.pnl_header.BackColor =
                 System.Drawing.Color.FromArgb(26, 35, 126);
             this.pnl_header.Dock =
@@ -91,7 +91,7 @@
             this.pnl_header.Controls.Add(this.lbl_subtitle);
             this.pnl_header.Controls.Add(this.btn_home);
 
-            // ── TOP SELECTION PANEL ────────────────────────
+            // TOP SELECTION PANEL
             this.pnl_top.BackColor =
                 System.Drawing.Color.White;
             this.pnl_top.Dock =
@@ -173,7 +173,7 @@
             this.pnl_top.Controls.Add(this.cmb_Assessment);
             this.pnl_top.Controls.Add(this.btn_load);
 
-            // ── COMPONENTS TITLE ───────────────────────────
+            // COMPONENTS TITLE
             this.pnl_components.BackColor =
                 System.Drawing.Color.FromArgb(248, 249, 252);
             this.pnl_components.Dock =
@@ -204,7 +204,7 @@
             this.pnl_components.Controls.Add(
                 this.lbl_components_title);
 
-            // ── SUMMARY PANEL ──────────────────────────────
+            // SUMMARY PANEL
             this.pnl_summary.BackColor =
                 System.Drawing.Color.White;
             this.pnl_summary.Dock =

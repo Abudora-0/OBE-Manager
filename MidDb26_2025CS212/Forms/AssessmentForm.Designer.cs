@@ -57,7 +57,7 @@
 
             this.SuspendLayout();
 
-            // ── HEADER ─────────────────────────────────────
+            // HEADER
             this.pnl_header.BackColor =
                 System.Drawing.Color.FromArgb(26, 35, 126);
             this.pnl_header.Dock =
@@ -110,7 +110,7 @@
             this.pnl_header.Controls.Add(this.lbl_subtitle);
             this.pnl_header.Controls.Add(this.btn_home);
 
-            // ── BODY PANEL ─────────────────────────────────
+            // BODY PANEL
             this.pnl_body.Dock =
                 System.Windows.Forms.DockStyle.Fill;
             this.pnl_body.BackColor =
@@ -118,7 +118,7 @@
             this.pnl_body.Padding =
                 new System.Windows.Forms.Padding(10);
 
-            // ── LEFT PANEL ─────────────────────────────────
+            // LEFT PANEL
             this.pnl_left.Location =
                 new System.Drawing.Point(10, 10);
             this.pnl_left.Size =
@@ -289,7 +289,7 @@
                 this.dgv_Assessments);
             this.pnl_left.Controls.Add(this.pnl_left_top);
 
-            // ── RIGHT PANEL ────────────────────────────────
+            // RIGHT PANEL
             this.pnl_right.Location =
                 new System.Drawing.Point(500, 10);
             this.pnl_right.Size =

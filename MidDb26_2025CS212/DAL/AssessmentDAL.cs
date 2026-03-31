@@ -8,7 +8,7 @@ namespace MidDb26_2025CS212.DAL
 {
     public class AssessmentDAL
     {
-        // ── ASSESSMENT CRUD ────────────────────────────────
+        //  ASSESSMENT CRUD
 
         public List<Assessment> GetAll()
         {
@@ -105,7 +105,7 @@ namespace MidDb26_2025CS212.DAL
             {
                 using (MySqlConnection con = DBHelper.GetConnection())
                 {
-                    // Delete components first
+                    // Delete components first from db
                     string q1 = @"DELETE FROM assessmentcomponent
                                   WHERE AssessmentId = @id";
                     MySqlCommand cmd1 = new MySqlCommand(q1, con);
@@ -127,7 +127,7 @@ namespace MidDb26_2025CS212.DAL
             }
         }
 
-        // ── COMPONENT CRUD ─────────────────────────────────
+        // COMPONENT CRUD
 
         public List<AssessmentComponent> GetComponents(
             int assessmentId)
@@ -254,7 +254,7 @@ namespace MidDb26_2025CS212.DAL
             }
         }
 
-        // ── HELPERS ────────────────────────────────────────
+        // HELPERS
 
         private Assessment MapAssessment(MySqlDataReader r)
         {
