@@ -8,7 +8,7 @@ namespace MidDb26_2025CS212.DAL
 {
     public class AttendanceDAL
     {
-        // Get all class attendance sessions
+        // Get all classes attendance sessions
         public List<ClassAttendance> GetAllSessions()
         {
             var list = new List<ClassAttendance>();
