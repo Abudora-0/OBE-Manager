@@ -88,7 +88,4 @@ MidDb26_2025CS212/
 
 ---
 
-### GitLab Repository
-`gitlab.com/Abudora-0/MidDb26_2025CS212`
-
 *CS104 Database Systems — Spring 2026 — UET Lahore*
